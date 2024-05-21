@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; background-image: url(pexels-lukaszmartenka-3207527.jpg) ;background-size: cover;
+}
+
+h1 {
+    color: #ff5555;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2.5em;box-shadow: 0 0 100px rgba(255, 229, 229, 0.5) ;  background-color: transparent;  
+}
+
+.editor-container {
+    width: 80%;
+    max-width: 800px;
+    background: #1a1a1a;
+    border: 5px solid #ff5555;
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    overflow: hidden;opacity: 0.8;
+}
+
+.toolbar {
+    background: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.toolbar button, .toolbar select, .toolbar input[type="color"] {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.toolbar button:hover, .toolbar select:hover, .toolbar input[type="color"]:hover {
+    background: #ff5555;
+    transform: scale(1.1);
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    background: rgb(231, 138, 138);
+    color: rgb(255, 255, 255);
+}

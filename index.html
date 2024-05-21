@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>   Text Editor By Areeb Fawad</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1> Text Editor By Areeb Fawad</h1>
+<div class="editor-container"> 
+    <div class="toolbar">
+        <button onclick="formatText('bold')" title="Bold"><b>B</b></button>
+        <button onclick="formatText('italic')" title="Italic"><i>I</i></button>
+        <button onclick="formatText('underline')" title="Underline"><u>U</u></button>
+        <select id="fontFamily" onchange="changeFontFamily()" title="Font Family">
+            <option value="Arial">Arial</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+        <select id="fontSize" onchange="changeFontSize()" title="Font Size">
+            <option value="1">10px</option>
+            <option value="2">13px</option>
+            <option value="3">16px</option>
+            <option value="4">18px</option>
+            <option value="5">24px</option>
+            <option value="6">32px</option>
+            <option value="7">48px</option>
+        </select>
+        <input type="color" id="textColor" onchange="changeTextColor()" title="Text Color" value="#ffffff">
+    </div>
+    <iframe id="textEditor"></iframe>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+ 
